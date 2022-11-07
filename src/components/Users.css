@@ -1,0 +1,66 @@
+.Users {
+    height: 91vh;
+    background: #021323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.UserCard {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span:first-child {
+    margin-right: 10px;
+}
+
+
+span:last-child {
+    margin-left: 10px;
+}
+.pagination button {
+    padding: 5px 8px;
+    margin: 0 5px;
+    background: white;
+    cursor: pointer;
+    border: none;
+}
+
+.active {
+    background: #03bfbc !important; 
+}
+
+.disable {
+    pointer-events: none;
+}
+
+@media (max-width: 500px) {
+    .Users {
+        height: 100%;
+        padding-top: 70px;
+    }
+    .UserCard {
+        padding: 1rem;
+    }
+
+    .pagination {
+        padding:0px 0px 30px 0px;
+    }
+}
